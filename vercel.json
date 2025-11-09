@@ -1,12 +1,6 @@
 {
   "version": 2,
   "name": "analytics-dashboard-web",
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/next"
-    }
-  ],
   "env": {
     "NEXT_PUBLIC_API_URL": "@analytics-api-url",
     "NEXT_PUBLIC_VANNA_URL": "@analytics-vanna-url"
@@ -18,7 +12,7 @@
     }
   },
   "functions": {
-    "apps/web/app/api/**/*.ts": {
+    "app/api/**/*.ts": {
       "maxDuration": 30
     }
   },
