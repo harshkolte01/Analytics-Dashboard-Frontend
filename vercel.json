@@ -1,16 +1,6 @@
 {
   "version": 2,
   "name": "analytics-dashboard-web",
-  "env": {
-    "NEXT_PUBLIC_API_URL": "@analytics-api-url",
-    "NEXT_PUBLIC_VANNA_URL": "@analytics-vanna-url"
-  },
-  "build": {
-    "env": {
-      "NEXT_PUBLIC_API_URL": "@analytics-api-url",
-      "NEXT_PUBLIC_VANNA_URL": "@analytics-vanna-url"
-    }
-  },
   "functions": {
     "app/api/**/*.ts": {
       "maxDuration": 30
